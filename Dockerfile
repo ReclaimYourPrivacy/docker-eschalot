@@ -10,7 +10,7 @@ RUN	(cd /tmp && git clone https://github.com/ReclaimYourPrivacy/eschalot.git)
 
 RUN	mkdir /usr/lib/eschalot
 
-RUN	(cd /tmp/eschalot && make clean && make && cp eschalot /usr/bin && cp wordlist /usr/bin && cp *.txt /usr/lib/eschalot)
+RUN	(cd /tmp/eschalot && make clean && make && cp eschalot /usr/bin && cp worgen /usr/bin && cp *.txt /usr/lib/eschalot)
 
 RUN	apt-get -y remove --purge git build-essential
 RUN 	apt-get -y autoremove --purge
