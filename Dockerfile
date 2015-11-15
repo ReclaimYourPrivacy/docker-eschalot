@@ -15,6 +15,8 @@ RUN	(cd /tmp/eschalot && make clean && make && cp eschalot /usr/bin && cp worgen
 RUN	apt-get -y remove --purge git build-essential
 RUN 	apt-get -y autoremove --purge
 
+RUN	apt-get -y clean
+
 #RUN     touch /tmp/results
 
 COPY eschalot.sh /
