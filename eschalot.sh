@@ -25,7 +25,7 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-TEMP=`getopt -n mqtt2ts -o hvs: --longoptions help,verbose,search: -- "$@"`
+TEMP=`getopt -n eschalot -o hvs: --longoptions help,verbose,search: -- "$@"`
 
 if [ $? != 0 ]; then 
     usage
@@ -58,6 +58,6 @@ while true; do
     esac
 done
 
-eschalot -ct5 -p $SEARCH | tee /tmp/result
+eschalot -ct5 -p $SEARCH | tee --append /tmp/result
 
 # vim: ts=4 et
