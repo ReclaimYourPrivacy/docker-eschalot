@@ -1,4 +1,4 @@
-FROM thingmesh/base:latest
+FROM debian:testing
 
 MAINTAINER Lars Boegild Thomsen <lth@reclaim-your-privacy.com>
 
