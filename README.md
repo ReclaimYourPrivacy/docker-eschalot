@@ -6,4 +6,3 @@ This package bundles the eschalot .onion address builder into a docker container
 
 The container image is automatically build and is available at Docker Hub https://hub.docker.com/r/reclaimyourprivacy/eschalot/
 
-
